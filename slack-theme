@@ -10,7 +10,6 @@ SYNOPSIS
      slack-theme day
      slack-theme night
      slack-theme night-mono
-     slack-theme classic-terminal
      slack-theme aubergine
      slack-theme aubergine-mono
      slack-theme arc-dark
@@ -18,6 +17,7 @@ SYNOPSIS
      slack-theme midnight-blue-mono
      slack-theme solarized-dark
      slack-theme solarized-light
+     slack-theme classic-terminal
      slack-theme install
      slack-theme uninstall
 
@@ -33,9 +33,6 @@ COMMANDS
 
      night-mono
           Use Night-Mono CSS
-          
-     classic-terminal
-          Use Classic-Terminal CSS
           
      aubergine
           Use Aubergine CSS
@@ -57,6 +54,9 @@ COMMANDS
 
      solarized-light
           Use Solarized-Light CSS
+            
+     classic-terminal
+          Use Classic-Terminal CSS
 
      install
           Download necessary scripts
@@ -93,7 +93,7 @@ MIDNIGHT_BLUE_URL="$CSS_URL/css/raw/variants/$MIDNIGHT_BLUE_FILE"
 MIDNIGHT_BLUE_MONO_URL="$CSS_URL/css/raw/variants/$MIDNIGHT_BLUE_MONO_FILE"
 SOLARIZED_DARK_URL="$CSS_URL/css/raw/variants/$SOLARIZED_DARK_FILE"
 SOLARIZED_LIGHT_URL="$CSS_URL/css/raw/variants/$SOLARIZED_LIGHT_FILE"
-CLASSIC_TERMINAL_URL="$ALT_CSS_URL/$CLASSIC_TERMINAL_FILE"
+CLASSIC_TERMINAL_URL="$ALT_CSS_URL/raw/$CLASSIC_TERMINAL_FILE"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 BACKUP_FOLDER="$DIR/backup"
