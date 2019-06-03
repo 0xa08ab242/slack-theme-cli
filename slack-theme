@@ -10,6 +10,7 @@ SYNOPSIS
      slack-theme day
      slack-theme night
      slack-theme night-mono
+     slack-theme classic-terminal
      slack-theme aubergine
      slack-theme aubergine-mono
      slack-theme arc-dark
@@ -32,7 +33,10 @@ COMMANDS
 
      night-mono
           Use Night-Mono CSS
-
+          
+     classic-terminal
+          Use Classic-Terminal CSS
+          
      aubergine
           Use Aubergine CSS
 
@@ -73,6 +77,7 @@ AUBERGINE_FILE="aubergine.css"
 AUBERGINE_MONO_FILE="aubergine-monospaced.css"
 BLACK_FILE="black.css"
 BLACK_MONO_FILE="black-monospaced.css"
+CLASSIC_TERMINAL_FILE="classic-terminal.css"
 MIDNIGHT_BLUE_FILE="midnight-blue.css"
 MIDNIGHT_BLUE_MONO_FILE="midnight-blue-monospaced.css"
 SOLARIZED_DARK_FILE="solarized-dark.css"
@@ -83,6 +88,7 @@ AUBERGINE_URL="$CSS_URL/css/raw/variants/$AUBERGINE_FILE"
 AUBERGINE_MONO_URL="$CSS_URL/css/raw/variants/$AUBERGINE_MONO_FILE"
 BLACK_URL="$CSS_URL/css/raw/$BLACK_FILE"
 BLACK_MONO_URL="$CSS_URL/css/raw/variants/$BLACK_MONO_FILE"
+CLASSIC_TERMINAL_URL="$CSS_URL/css/raw/variants/$CLASSIC_TERMINAL_FILE"
 MIDNIGHT_BLUE_URL="$CSS_URL/css/raw/variants/$MIDNIGHT_BLUE_FILE"
 MIDNIGHT_BLUE_MONO_URL="$CSS_URL/css/raw/variants/$MIDNIGHT_BLUE_MONO_FILE"
 SOLARIZED_DARK_URL="$CSS_URL/css/raw/variants/$SOLARIZED_DARK_FILE"
@@ -131,6 +137,7 @@ function pull-css() {
     curl $AUBERGINE_MONO_URL -O && mv $AUBERGINE_MONO_FILE "$DIR/css/$AUBERGINE_MONO_FILE"
     curl $BLACK_URL -O && mv $BLACK_FILE "$DIR/css/$BLACK_FILE"
     curl $BLACK_MONO_URL -O && mv $BLACK_MONO_FILE "$DIR/css/$BLACK_MONO_FILE"
+    curl $CLASSIC_TERMINAL -O && mv $CLASSIC_TERMINAL_FILE "$DIR/css/$CLASSIC_TERMINAL_FILE"
     curl $MIDNIGHT_BLUE_URL -O && mv $MIDNIGHT_BLUE_FILE "$DIR/css/$MIDNIGHT_BLUE_FILE"
     curl $MIDNIGHT_BLUE_MONO_URL -O && mv $MIDNIGHT_BLUE_MONO_FILE "$DIR/css/$MIDNIGHT_BLUE_MONO_FILE"
     curl $SOLARIZED_DARK_URL -O && mv $SOLARIZED_DARK_FILE "$DIR/css/$SOLARIZED_DARK_FILE"
@@ -255,6 +262,13 @@ fi
 if [ "$1" == "arc-dark" ]
 then
     CSS_CONTENT=$(cat "$DIR/css/$ARC_DARK_FILE")
+fi
+
+if [ "$1" == "classic-terminal" ]
+then
+    CSS_CONTENT=$(cat "$DIR/css/$CLASSIC_TERMINAL_FILE")
+    BG_COLOR="#000"
+    THREAD_COLOR="#33ff33"
 fi
 
 if [ "$1" == "midnight-blue" ]
