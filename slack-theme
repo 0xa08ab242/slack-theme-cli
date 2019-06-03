@@ -71,28 +71,29 @@ Report any bugs to mykehell123@gmail.com
 INSTALL_DIR="$HOME/bin/slack-theme"
 
 CSS_URL="https://raw.githubusercontent.com/laCour/slack-night-mode/master"
+ALT_CSS_URL=="https://raw.githubusercontent.com/0xa08ab242/slack-theme-cli/master"
 
 ARC_DARK_FILE="arc-dark.css"
 AUBERGINE_FILE="aubergine.css"
 AUBERGINE_MONO_FILE="aubergine-monospaced.css"
 BLACK_FILE="black.css"
 BLACK_MONO_FILE="black-monospaced.css"
-CLASSIC_TERMINAL_FILE="classic-terminal.css"
 MIDNIGHT_BLUE_FILE="midnight-blue.css"
 MIDNIGHT_BLUE_MONO_FILE="midnight-blue-monospaced.css"
 SOLARIZED_DARK_FILE="solarized-dark.css"
 SOLARIZED_LIGHT_FILE="solarized-light.css"
+CLASSIC_TERMINAL_FILE="classic-terminal.css"
 
 ARC_DARK_URL="$CSS_URL/css/raw/variants/$ARC_DARK_FILE"
 AUBERGINE_URL="$CSS_URL/css/raw/variants/$AUBERGINE_FILE"
 AUBERGINE_MONO_URL="$CSS_URL/css/raw/variants/$AUBERGINE_MONO_FILE"
 BLACK_URL="$CSS_URL/css/raw/$BLACK_FILE"
 BLACK_MONO_URL="$CSS_URL/css/raw/variants/$BLACK_MONO_FILE"
-CLASSIC_TERMINAL_URL="$CSS_URL/css/raw/variants/$CLASSIC_TERMINAL_FILE"
 MIDNIGHT_BLUE_URL="$CSS_URL/css/raw/variants/$MIDNIGHT_BLUE_FILE"
 MIDNIGHT_BLUE_MONO_URL="$CSS_URL/css/raw/variants/$MIDNIGHT_BLUE_MONO_FILE"
 SOLARIZED_DARK_URL="$CSS_URL/css/raw/variants/$SOLARIZED_DARK_FILE"
 SOLARIZED_LIGHT_URL="$CSS_URL/css/raw/variants/$SOLARIZED_LIGHT_FILE"
+CLASSIC_TERMINAL_URL="$ALT_CSS_URL/css/raw/variants/$CLASSIC_TERMINAL_FILE"
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 BACKUP_FOLDER="$DIR/backup"
@@ -137,11 +138,11 @@ function pull-css() {
     curl $AUBERGINE_MONO_URL -O && mv $AUBERGINE_MONO_FILE "$DIR/css/$AUBERGINE_MONO_FILE"
     curl $BLACK_URL -O && mv $BLACK_FILE "$DIR/css/$BLACK_FILE"
     curl $BLACK_MONO_URL -O && mv $BLACK_MONO_FILE "$DIR/css/$BLACK_MONO_FILE"
-    curl $CLASSIC_TERMINAL -O && mv $CLASSIC_TERMINAL_FILE "$DIR/css/$CLASSIC_TERMINAL_FILE"
     curl $MIDNIGHT_BLUE_URL -O && mv $MIDNIGHT_BLUE_FILE "$DIR/css/$MIDNIGHT_BLUE_FILE"
     curl $MIDNIGHT_BLUE_MONO_URL -O && mv $MIDNIGHT_BLUE_MONO_FILE "$DIR/css/$MIDNIGHT_BLUE_MONO_FILE"
     curl $SOLARIZED_DARK_URL -O && mv $SOLARIZED_DARK_FILE "$DIR/css/$SOLARIZED_DARK_FILE"
     curl $SOLARIZED_LIGHT_URL -O && mv $SOLARIZED_LIGHT_FILE "$DIR/css/$SOLARIZED_LIGHT_FILE"
+    curl $CLASSIC_TERMINAL -O && mv $CLASSIC_TERMINAL_FILE "$DIR/css/$CLASSIC_TERMINAL_FILE"
 }
 
 function set-env-vars() {
@@ -176,8 +177,8 @@ then
         fi
         exit 0
     fi
-    curl https://raw.githubusercontent.com/mykeels/slack-theme-cli/master/slack-day -O
-    curl https://raw.githubusercontent.com/mykeels/slack-theme-cli/master/slack-night -O
+    curl https://raw.githubusercontent.com/0xa08ab242/slack-theme-cli/master/slack-day -O
+    curl https://raw.githubusercontent.com/0xa08ab242/slack-theme-cli/master/slack-night -O
     chmod 766 "$DIR/slack-theme"
     chmod 766 "$DIR/slack-day"
     chmod 766 "$DIR/slack-night"
@@ -268,7 +269,7 @@ if [ "$1" == "classic-terminal" ]
 then
     CSS_CONTENT=$(cat "$DIR/css/$CLASSIC_TERMINAL_FILE")
     BG_COLOR="#000"
-    THREAD_COLOR="#33ff33"
+    THREAD_COLOR="#34ff34"
 fi
 
 if [ "$1" == "midnight-blue" ]
