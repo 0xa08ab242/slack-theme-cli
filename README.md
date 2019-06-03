@@ -14,6 +14,9 @@ A Command-Line Tool for changing Slack's desktop app colors, like
 
 ![image](https://user-images.githubusercontent.com/11996508/48414177-3ce46f80-e74a-11e8-98fb-2f0ce5d0a5f9.png)
 
+## Classic-Terminal Mode
+This is still a work in progress.  The css still needs some tweaks, and the install could be cleaner.
+
 ## How to install
 
 To download and install, run the following code in your terminal:
