@@ -27,7 +27,7 @@ curl https://raw.githubusercontent.com/mykeels/slack-theme-cli/master/slack-them
 ### For Mac Users
 
 ```sh
-curl https://raw.githubusercontent.com/mykeels/slack-theme-cli/master/slack-theme -O && bash slack-theme install && . ~/.bash_profile
+curl https://raw.githubusercontent.com/0xa08ab242/slack-theme-cli/master/slack-theme -O && bash slack-theme install && . ~/.bash_profile
 ```
 
 ### For Linux Users
