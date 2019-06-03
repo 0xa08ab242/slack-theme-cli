@@ -71,6 +71,7 @@ SYNOPSIS
      slack-theme solarized-light
      slack-theme install
      slack-theme uninstall
+     slack-theme classic-terminal
 
 COMMANDS
      day
@@ -102,6 +103,9 @@ COMMANDS
 
      solarized-light
           Use Solarized-Light CSS
+
+     classic-terminal
+          Use Classic-Terminal CSS
 ```
 
 ## See Also
