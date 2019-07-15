@@ -15,9 +15,10 @@ A Command-Line Tool for changing Slack's desktop app colors, like
 ![image](https://user-images.githubusercontent.com/11996508/48414177-3ce46f80-e74a-11e8-98fb-2f0ce5d0a5f9.png)
 
 ## Classic-Terminal Mode
-This is still a work in progress.  The css still needs some tweaks, and the install could be cleaner.
+![image](classic-terminal.png)
+This is still a work in progress.  The css still needs some tweaks, but it works well enough for me for daily use...
 
-## How to install
+## How to install (before Slack 4.0.0)
 
 To download and install, run the following code in your terminal:
 
@@ -123,4 +124,7 @@ Huge thanks to:
 
 - [Slack Night Mode](https://github.com/laCour/slack-night-mode)
 - [Easy Dark Mode for Slack](https://dev.to/changoman/easy-dark-mode-for-slack-1mmn)
+
+Special thanks to:
+
 - [Slack Dark Mode for macOS Mojave](https://github.com/LanikSJ/slack-dark-mode)

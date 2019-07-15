@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# this line taken from slack-dark-mode.sh in https://github.com/LanikSJ/slack-dark-mode
+# only tested on macOS Mojave
+## brew install npm to intall npx
+sudo npx asar extract /Applications/Slack.app/Contents/Resources/app.asar /Applications/Slack.app/Contents/Resources/app.asar.unpacked
+
+exit 0
