@@ -110,6 +110,8 @@ COMMANDS
      classic-terminal
           Use Classic-Terminal CSS
 ```
+## Note: workaround for Slack 4.0.0 breakage
+I setup a workaround based off of slack-dark-mode.sh in https://github.com/LanikSJ/slack-dark-mode.  With slack not running, I followed the steps in the script to unpack the files, then I updates the slack-theme file paths to use the new file paths and file name before executing it as described above, then I followed the steps in the script to re-package the files.  Lastly, I started slack, and the desired theme was once again working.
 
 ## See Also
 
@@ -121,3 +123,4 @@ Huge thanks to:
 
 - [Slack Night Mode](https://github.com/laCour/slack-night-mode)
 - [Easy Dark Mode for Slack](https://dev.to/changoman/easy-dark-mode-for-slack-1mmn)
+- [Slack Dark Mode for macOS Mojave](https://github.com/LanikSJ/slack-dark-mode)
