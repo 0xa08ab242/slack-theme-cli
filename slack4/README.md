@@ -11,9 +11,15 @@ copy the files in this folder to wherever slack-them installed...
 
 those steps worked for me, but I only tried it on macOS Mojave
 
+# And then it stopped working, suddenly...
+Then, I saw this thread: https://www.reddit.com/r/Slack/comments/cdv1w7/were_not_getting_that_dark_mode_are_we/eu1mkvv/ where Cruftbrew posted the fix:
+Edit '~/Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\ Support/Slack/local-settings.json'
+changing the value for "bootSonic": from "once" to "bootSonic": "never"
+then restart Slack.
 
 ## Credits
 
 Special thanks to:
 
 - [Slack Dark Mode for macOS Mojave](https://github.com/LanikSJ/slack-dark-mode)
+- [Reddit User Cruftbrew](https://www.reddit.com/user/cruftbrew/)
