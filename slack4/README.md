@@ -17,6 +17,8 @@ Edit '~/Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\ S
 changing the value for "bootSonic": from "once" to "bootSonic": "never"
 then restart Slack.
 
+This resolved it, but two weeks later, the theming reverted because the setting had 'magically' changed from "never" to "always."
+
 ## Credits
 
 Special thanks to:
