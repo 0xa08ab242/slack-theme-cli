@@ -21,6 +21,8 @@ This resolved it, but two weeks later, the theming reverted because the setting 
 
 Then, about a week later, it reverted again, this time the theming reverted because the setting had 'magically' changed from "never" to "once."  As before, changing it back fixed it, and I still don't know what changed the setting.
 
+Then, the next day, it reverted again, this time the theming reverted because the setting had 'magically' changed from "never" to "once."  As before, changing it back fixed it, and I still don't know what changed the setting. 
+
 ## Credits
 
 Special thanks to:
