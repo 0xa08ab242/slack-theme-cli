@@ -23,7 +23,9 @@ Then, about a week later, it reverted again, this time the theming reverted beca
 
 Then, the next day, it reverted again, this time the theming reverted because the setting had 'magically' changed from "never" to "once."  As before, changing it back fixed it, and I still don't know what changed the setting. 
 
-So, since this looks like it going to happen daily, I made a simple script to use a backup copy of local-settings.json and overwrite the one that keeps changing.  Such a item feels too trivial to add to the repo at this time.  My current suspicion is that the file is reverting as part of the 'update check and notification' processes. Between the hassle of the last slack update and the uselessly vague changelog for the available update, I have no appetite for more from them right now. 
+So, since this looks like it going to happen daily, I made a simple script to use a backup copy of local-settings.json and overwrite the one that keeps changing.  Such a item feels too trivial to add to the repo at this time; the main reason for making the script was laziness as I attempt to trigger the processes that revert the file.
+
+I tested my suspicion that local-settings.json is reverting as part of the 'update check and notification' processes.  Going to the Updates tab of the App Store, where an available update exists for Slack causes the file to revert.  Between the hassle of the last slack update and the uselessly vague changelog for the available update, I have no appetite for more from them right now, so I will defer testing what happens when there is no availale Slack update to a later date - assuming that the next update does not cause more breakage.
 
 ## Credits
 
