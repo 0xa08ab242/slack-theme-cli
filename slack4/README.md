@@ -23,6 +23,8 @@ Then, about a week later, it reverted again, this time the theming reverted beca
 
 Then, the next day, it reverted again, this time the theming reverted because the setting had 'magically' changed from "never" to "once."  As before, changing it back fixed it, and I still don't know what changed the setting. 
 
+So, since this looks like it going to happen daily, I made a simple script to use a backup copy of local-settings.json and overwrite the one that keeps changing.  Such a item feels too trivial to add to the repo at this time.  My current suspicion is that the file is reverting as part of the 'update check and notification' processes. Between the hassle of the last slack update and the uselessly vague changelog for the available update, I have no appetite for more from them right now. 
+
 ## Credits
 
 Special thanks to:
