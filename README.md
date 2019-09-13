@@ -114,6 +114,9 @@ COMMANDS
 ## Note: workaround for Slack 4.0.0 breakage
 I setup a workaround based off of slack-dark-mode.sh in https://github.com/LanikSJ/slack-dark-mode.  With slack not running, I followed the steps in the script to unpack the files, then I updates the slack-theme file paths to use the new file paths and file name before executing it as described above, then I followed the steps in the script to re-package the files.  Lastly, I started slack, and the desired theme was once again working.
 
+## Final Note:
+since Slack finally pushed out a working dark mode (as of Slack 4.0.3), though I would not have picked the color scheme they chose, it is usable, so I will not likely be making any more updates to my branch
+
 ## See Also
 
 - [Slack Black Theme](https://github.com/widget-/slack-black-theme)
